@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background: linear-gradient(to right top, #FFC804,  #FF0F5C, #D504D9);
+}
+
+.header__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 15px;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Anton';
+    list-style: none;
+    font-size: large;
+    background-color: aquamarine;
+}
+
+.header__lista--1{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #FFC804;
+}
+
+.header__lista--2{
+    margin: 5px;
+    padding: 5px;
+    background-color: #F27405;
+    border-radius: 10px;
+}
+
+.header__lista--3{
+    margin: 5px;
+    padding: 5px;
+    background-color: #FF0F5C;
+    border-radius: 10px;
+}
+
+.header__lista--4{
+    margin: 5px;
+    padding: 5px;
+    background-color: #F2059F;
+    border-radius: 10px;
+}
+
+.header__lista--5{
+    margin: 5px;
+    padding: 5px;
+    background-color: #D504D9;
+    border-radius: 10px;
+}
+
+.header__lista a{
+    color: white;
+    text-decoration: none;  
+}
+
+.header__lista a:hover{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.section__eventos{
+    display: flex;
+    margin-left: 10px;
+}
+
+.eventos__title{
+    font-family: 'Pacifico';
+    font-size: 30px;
+    color: black;
+    background-color: white;
+}
+
+.eventos__mes{
+    font-family: 'Pacifico';
+    color: white;
+    padding-left: 10px;
+}
+
+.eventos__mes--1{
+    display: flex;
+    text-shadow: 2px 2px black;
+    background-color: #FFC804;
+}
+
+.eventos__mes--2{
+    display: flex;
+    text-shadow: 2px 2px black;
+    background-color: #FF0F5C;
+}
+
+.eventos__mes--3{
+    display: flex;
+    text-shadow: 2px 2px black;
+    background-color: #D504D9;
+}
+
+.eventos__item{
+    display: block;
+    font-family: 'Anton';
+    color: black;
+    list-style: none;
+    padding-left: 25px; 
+}
+
+.section__galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria__img{
+
+    margin: 30px;
+    width: 384px;
+    height: 216px;
+}
+
+.galeria__img:hover{
+
+    width: 768px;
+    height: 432px;
+}
+
+.section__imagenAbajo{
+    margin-left: 10px;
+}
+
+.footer__title{
+    font-family: 'Pacifico';
+    color: #D504D9;
+    text-shadow: 2px 2px black;
+    background-color: #F27405;
+}
+
+h1{
+    font-family: 'Anton';
+    color: blue;
+    background-color: red;
+}
+
+h2{
+    font-family: 'Pacifico';
+    color: darkmagenta;
+    background-color: coral;
+}
+
+ul{
+    display: inline;
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+
+
+/* MEDIA QUERIE DE CELULAR */
+/* El 99,9% siempre debe haber una sola columna */
+/* El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas */
+
+@media (min-width: 320px) and (max-width: 575px){
+    header{
+        height: auto;
+    }
+
+    .header__lista{
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .header__nav{
+        flex-direction: column;
+    }
+}
+
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 576px) and (max-width: 992px){
+    header{
+        height: auto;
+    }
+
+    .header__lista{
+        flex-grow: 1;
+        }
+
+    .header__nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* NO HACE FALTA DECLARAR LA MEDIA PARA DESKTOP PORQUE YA TOMA POR DEFECTO LO MAYOR A 992PX */
