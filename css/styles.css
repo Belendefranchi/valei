@@ -44,7 +44,7 @@ header{
 .header__lista a:hover{
     color: #D16BA5;
     text-shadow: 2px 2px 2px white;
-    transition: all 1s;
+    transition: all 0.4s;
 }
 
 /* .header__lista--1{
