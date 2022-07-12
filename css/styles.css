@@ -7,6 +7,7 @@ header{
     padding: 20px;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
+
 .header__nav{
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +27,6 @@ header{
     flex-grow: 1;
 }
 
-
 .header__lista a{
     color: white;
     text-decoration: none;  
@@ -45,7 +45,7 @@ header{
     text-shadow: 2px 2px 4px black;
     font-family: 'Anton';
     list-style: none;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 /* .header__lista--1{
@@ -86,19 +86,17 @@ header{
 /* -----------------------------------------------INDEX-------------------------------------------------------------- */
 main{
     display: flex;
-/*     flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100vw;
-/*     height: 100vh; */
 }
 
 .section__eventos{
     display: grid;
     width: 100vw;
-    height: 100vh;
     row-gap: 15px;
     column-gap: 15px;
     padding: 20px;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -106,10 +104,10 @@ main{
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    height: 100vh;
+    width: 100vw;
     background-image: url("../resources/images/consola.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -121,56 +119,60 @@ main{
 }
 
 .eventos__listado{
-    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
     grid-row: 1/2;
-}
-
-.portada__title{
-    text-shadow: 2px 2px 4px black;
-    font-family: 'Pacifico';
-    font-size: 50px;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .listado__title{
     display: flex;
-    font-family: 'Pacifico';
-    font-size: 30px;
-    color: black;
-}
-
-.listado__mes{
-/*     width: 100vw; */
-/*     margin: 20px; */
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    font-family: 'Arima';
+    font-family: 'Anton';
+    font-size: 25px;
     color: black;
+    text-shadow: 2px 2px 2px grey;
 }
 
 .listado__mes--1{
     display: flex;
-    text-shadow: 2px 2px white;
     background-color: #D16BA5;
-    
+    font-family: "pacifico";
+    font-size: x-large;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 .listado__mes--2{
     display: flex;
-    text-shadow: 2px 2px white;
     background-color: #86A8E7;
+    font-family: "pacifico";
+    font-size: x-large;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 .listado__mes--3{
     display: flex;
-    text-shadow: 2px 2px white;
     background-color: #5FFBF1;
+    font-family: "pacifico";
+    font-size: x-large;
+    color: white;
+    text-shadow: 2px 2px black;
 }
+
+/* .listado__lista{
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1/2;
+} */
 
 .listado__item{
     display: flex;
-    font-family: 'Arima';
+    font-family: 'Anton';
     color: black;
     list-style: none;
     padding-left: 25px; 
@@ -235,7 +237,6 @@ main{
     column-gap: 15px;
     padding: 20px;
     justify-content: center;
-/*     align-items: center; */
 }
 
 .img1{
@@ -375,6 +376,21 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    }
+
+    .section__eventos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .eventos__portada{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .eventos__listado{
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     .section__galeria{
