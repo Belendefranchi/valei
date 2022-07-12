@@ -4,10 +4,11 @@
 }
 
 header{
-    padding: 20px;
+    padding: 10px;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
+/* ---------------HEADER--------------- */
 .header__nav{
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +17,7 @@ header{
 .header__logo{
     display: flex;
     flex-wrap: wrap;
-    /* background: linear-gradient(to right top, #FFC804,  #FF0F5C, #D504D9); */
+    width: 6%;
 }
 
 .header__lista{
@@ -33,7 +34,7 @@ header{
 }
 
 .header__lista a:hover{
-    color: #D16BA5;
+    color: black;
     text-shadow: 2px 2px 2px white;
     transition: all 0.4s;
 }
@@ -48,46 +49,12 @@ header{
     font-size: 25px;
 }
 
-/* .header__lista--1{
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #FFC804;
-}
-
-.header__lista--2{
-    margin: 5px;
-    padding: 5px;
-    background-color: #F27405;
-    border-radius: 10px;
-}
-
-.header__lista--3{
-    margin: 5px;
-    padding: 5px;
-    background-color: #FF0F5C;
-    border-radius: 10px;
-}
-
-.header__lista--4{
-    margin: 5px;
-    padding: 5px;
-    background-color: #F2059F;
-    border-radius: 10px;
-}
-
-.header__lista--5{
-    margin: 5px;
-    padding: 5px;
-    background-color: #D504D9;
-    border-radius: 10px;
-} */
-
-/* -----------------------------------------------INDEX-------------------------------------------------------------- */
+/* ----------------INDEX---------------- */
 main{
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+/*     height: 100vh; */
 }
 
 .section__eventos{
@@ -96,7 +63,7 @@ main{
     row-gap: 15px;
     column-gap: 15px;
     padding: 20px;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -104,10 +71,10 @@ main{
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    width: 100vw;
-    background-image: url("../resources/images/consola.jpg");
+    height: 60vh;
+    background-image: url("../resources/images/1.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -119,18 +86,13 @@ main{
 }
 
 .eventos__listado{
-    display: flex;
-    flex-direction: column;
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 .listado__title{
     display: flex;
-    flex-direction: column;
+/*     flex-direction: column; */
     font-family: 'Anton';
     font-size: 25px;
     color: black;
@@ -164,12 +126,6 @@ main{
     text-shadow: 2px 2px black;
 }
 
-/* .listado__lista{
-    flex-direction: column;
-    grid-column: 3/4;
-    grid-row: 1/2;
-} */
-
 .listado__item{
     display: flex;
     font-family: 'Anton';
@@ -180,7 +136,9 @@ main{
 
 .section__galeria{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .galeria__img{
@@ -199,6 +157,7 @@ main{
 .section__imagenAbajo{
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 /* .keyframe{
@@ -224,9 +183,9 @@ main{
         width: 0px;
     } 
 } */
-/* ----------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------ */
 
-/* ---------------------------------------------SOBRE-NOSOTROS------------------------------------------------------------- */
+/* -----------SOBRE-NOSOTROS----------- */
 .servicios__grid{
     display: grid;
     width: 100vw;
@@ -243,7 +202,7 @@ main{
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    height: 30vh;
+    height: 40vh;
     background-image: url("../resources/images/2.jpg");
     background-position: center;
     background-size: cover;
@@ -269,7 +228,7 @@ main{
     grid-column: 3/4;
     grid-row: 2/3;
     display: flex;
-    height: 30vh;
+    height: 40vh;
     background-image: url("../resources/images/3.jpg");
     background-position: center;
     background-size: cover;
@@ -295,7 +254,7 @@ main{
     grid-column: 1/2;
     grid-row: 3/4;
     display: flex;
-    height: 30vh;
+    height: 40vh;
     background-image: url("../resources/images/4.jpg");
     background-position: center;
     background-size: cover;
@@ -328,8 +287,16 @@ main{
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+/*     display: flex;
+    flex-direction: column; */
+}
+
+.section__redes{
+    margin-top: 20px;
+/*     display: flex; */
+/*     flex-direction: column; */
 }
 
 .footer__title{
@@ -337,6 +304,11 @@ footer{
     color: white;
     text-shadow: 2px 2px black;
     background-color: #D16BA5;
+}
+
+.footer__redes{
+    display: block;
+    padding: 10px;
 }
 
 /* FLEXBOX -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -359,7 +331,7 @@ align-self: center;             -----> especifica la alineación del elemento se
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* MEDIA QUERY DE CELULAR-------------------------------------------
+/* --------MEDIA QUERY DE CELULAR------------------------------------
 El 99,9% siempre debe haber una sola columna
 El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
 --------------------------------------------------------------------*/
@@ -372,10 +344,19 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
         flex-direction: column;
     }
 
+    .header__logo{
+        display: flex;
+        width: 15vw;
+    }
+
     .header__lista{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__item{
+        margin: 8px;
+        font-size: 20px;
     }
 
     .section__eventos{
@@ -386,11 +367,13 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     .eventos__portada{
         grid-column: 1/2;
         grid-row: 1/2;
+        font-size: 40px;
+        height: 100vh;
     }
 
     .eventos__listado{
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
 
     .section__galeria{
@@ -398,8 +381,8 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     }
 
     .galeria__img{
-            margin: 2px;
-        }
+        margin: 2px;
+    }
     
     .servicios__grid{
         grid-template-columns: 1fr;
@@ -450,19 +433,35 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     }
 }
 
-/* MEDIA QUERY DE TABLET */
+/* --------MEDIA QUERY DE TABLET-------- */
 @media (min-width: 576px) and (max-width: 992px){
     header{
         height: auto;
     }
 
+    .header__logo{
+        display: flex;
+        width: 15vw;
+    }
+
     .header__lista{
-        justify-content: center;
-        align-items: center;
-        }
+        display: flex;
+    }
 
     .header__item{
+        margin: 8px;
         font-size: 16px;
+    }
+
+    .section__eventos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .eventos__portada{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 30px;
     }
 
     .section__galeria{
