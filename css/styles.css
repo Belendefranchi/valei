@@ -26,15 +26,6 @@ header{
     flex-grow: 1;
 }
 
-.header__item{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px;
-    text-shadow: 2px 2px 4px black;
-    font-family: 'Anton';
-    list-style: none;
-    font-size: x-large;
-}
 
 .header__lista a{
     color: white;
@@ -45,6 +36,16 @@ header{
     color: #D16BA5;
     text-shadow: 2px 2px 2px white;
     transition: all 0.4s;
+}
+
+.header__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Anton';
+    list-style: none;
+    font-size: 22px;
 }
 
 /* .header__lista--1{
@@ -85,82 +86,110 @@ header{
 /* -----------------------------------------------INDEX-------------------------------------------------------------- */
 main{
     display: flex;
-    flex-wrap: wrap;
+/*     flex-wrap: wrap; */
     width: 100vw;
-/*     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+/*     height: 100vh; */
 }
 
 .section__eventos{
+    display: grid;
     width: 100vw;
-    display: flex;
-/*     background: linear-gradient(to right top, #DD85E5, #908BF0, #008DE5, #0088C7, #007E9B, #00706B); */
+    height: 100vh;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.eventos__img{
+.eventos__portada{
+    grid-column: 1/2;
+    grid-row: 1/2;
     display: flex;
+    height: 100vh;
+    background-image: url("../resources/images/consola.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Pacifico';
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
-.eventos__title{
+.eventos__listado{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.portada__title{
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: white;
+}
+
+.listado__title{
     display: flex;
     font-family: 'Pacifico';
     font-size: 30px;
     color: black;
 }
 
-.eventos__mes{
-    width: 100vw;
+.listado__mes{
+/*     width: 100vw; */
+/*     margin: 20px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-family: 'Pacifico';
-    color: white;
+    font-family: 'Arima';
+    color: black;
 }
 
-.eventos__mes--1{
+.listado__mes--1{
     display: flex;
-    text-shadow: 2px 2px black;
-/*     background-color: #FFC804; */
+    text-shadow: 2px 2px white;
     background-color: #D16BA5;
     
 }
 
-.eventos__mes--2{
+.listado__mes--2{
     display: flex;
-    text-shadow: 2px 2px black;
-/*     background-color: #FF0F5C; */
+    text-shadow: 2px 2px white;
     background-color: #86A8E7;
 }
 
-.eventos__mes--3{
+.listado__mes--3{
     display: flex;
-    text-shadow: 2px 2px black;
-/*     background-color: #D504D9; */
+    text-shadow: 2px 2px white;
     background-color: #5FFBF1;
 }
 
-.eventos__item{
+.listado__item{
     display: flex;
-    font-family: 'Anton';
+    font-family: 'Arima';
     color: black;
     list-style: none;
     padding-left: 25px; 
 }
 
-/* .section__galeria{
-    display: none;
+.section__galeria{
     display: flex;
-    flex-direction: column;
-} */
+    flex-direction: row;
+}
 
 .galeria__img{
-    display: none;
+/*     display: none; */
     margin: 30px;
     width: 384px;
     height: 216px;
 }
 
 .galeria__img:hover{
-    display: none;
+/*     display: none; */
     width: 768px;
     height: 432px;
 }
@@ -194,17 +223,6 @@ main{
     } 
 } */
 /* ----------------------------------------------------------------------------------------------------------------- */
-footer{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__title{
-    font-family: 'Pacifico';
-    color: white;
-    text-shadow: 2px 2px black;
-    background-color: #F27405;
-}
 
 /* ---------------------------------------------SOBRE-NOSOTROS------------------------------------------------------------- */
 .servicios__grid{
@@ -216,13 +234,15 @@ footer{
     row-gap: 15px;
     column-gap: 15px;
     padding: 20px;
-    /* background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    justify-content: center;
+/*     align-items: center; */
 }
 
-.img2{
+.img1{
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
+    height: 30vh;
     background-image: url("../resources/images/2.jpg");
     background-position: center;
     background-size: cover;
@@ -241,13 +261,14 @@ footer{
     padding: 15px;
     border: black solid 2px;
     background-color: #d16ba594;
-/*     background-color: #41dfff; */
+    font-size: 20px;
 }
 
-.img3{
+.img2{
     grid-column: 3/4;
     grid-row: 2/3;
     display: flex;
+    height: 30vh;
     background-image: url("../resources/images/3.jpg");
     background-position: center;
     background-size: cover;
@@ -266,13 +287,14 @@ footer{
     padding: 15px;
     border: black solid 2px;
     background-color: #86a8e791;
-/*     background-color: #41dfff; */
+    font-size: 20px;
 }
 
-.img4{
+.img3{
     grid-column: 1/2;
     grid-row: 3/4;
     display: flex;
+    height: 30vh;
     background-image: url("../resources/images/4.jpg");
     background-position: center;
     background-size: cover;
@@ -291,20 +313,30 @@ footer{
     padding: 15px;
     border: black solid 2px;
     background-color: #5ffbf180;
-/*     background-color: #41dfff; */
+    font-size: 20px;
 }
 
-.img5{
+.img4{
     grid-column: 1/4;
     grid-row: 4/5;
-    background-image: url("../resources/images/5.jpg");
+    height: 30vh;
+    background-image: url("../resources/images/img1_small.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+}
 
-
+.footer__title{
+    font-family: 'Pacifico';
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: #D16BA5;
+}
 
 /* FLEXBOX -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 display: flex;                  -----> para aplicar el flexbox
@@ -330,21 +362,75 @@ align-self: center;             -----> especifica la alineación del elemento se
 El 99,9% siempre debe haber una sola columna
 El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
 --------------------------------------------------------------------*/
-
 @media (min-width: 320px) and (max-width: 575px){
     header{
         height: auto;
     }
 
+    .header__nav{
+        flex-direction: column;
+    }
+
     .header__lista{
     flex-direction: column;
-    flex-grow: 0;
     justify-content: center;
     align-items: center;
     }
 
-    .header__nav{
+    .section__galeria{
         flex-direction: column;
+    }
+
+    .galeria__img{
+            margin: 2px;
+        }
+    
+    .servicios__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 10px;
+    }
+    
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: large;
+    }
+    
+    .txt1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 14px;
+    }
+    
+    .img2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: large;
+    }
+    
+    .txt2{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-size: 14px;
+    }
+    
+    .img3{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        font-size: large;
+    }
+    
+    .txt3{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        font-size: 14px;
+    }
+    
+    .img4{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        font-size: large;
     }
 }
 
@@ -355,12 +441,67 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     }
 
     .header__lista{
-        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
         }
 
-    .header__nav{
-        flex-direction: row;
-        flex-wrap: wrap;
+    .header__item{
+        font-size: 16px;
+    }
+
+    .section__galeria{
+        flex-direction: column;
+    }
+
+    .galeria__img{
+        margin: 2px;
+    }
+    
+    .servicios__grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+    
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: X-large;
+    }
+    
+    .txt1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 14px;
+    }
+    
+    .img2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: X-large;
+    }
+    
+    .txt2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 14px;
+    }
+    
+    .img3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: X-large;
+    }
+    
+    .txt3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 14px;
+    }
+    
+    .img4{
+        grid-column: 1/3;
+        grid-row: 4/5;
     }
 }
 
