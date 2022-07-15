@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Lobster&family=Montserrat:wght@400;900&family=Open+Sans&family=Pacifico&family=Playfair+Display:ital,wght@1,500&family=Raleway:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title>VALEI - Home</title>
@@ -52,19 +54,37 @@
                 </ul>
             </article>
         </section>
-        <section class="section__galeria">
+<!--         <section class="section__galeria">
             <img class="galeria__img" src="resources/images/2.jpg" alt="VALEI 2">
             <img class="galeria__img" src="resources/images/consola1.jpg" alt="VALEI 3">
             <img class="galeria__img" src="resources/images/pixel3.jpg" alt="VALEI 4">
             <img class="galeria__img" src="resources/images/tubos2.jpg" alt="VALEI 5">
             <img class="galeria__img" src="resources/images/tubos3.jpg" alt="VALEI 6">
-        </section>
+        </section> -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../resources/images/consola1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/images/tubos2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/images/tubos3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <section class="section__imagenAbajo">
             <img src="resources/images/img1_small.jpg" alt="VALEI">
         </section>
-<!--         <section class="keyframe">
-            <img class="keyframe__img" src="resources/images/7.jpg" alt="VALEI 7">
-        </section> -->
     </main>
     <footer>
         <section class="section__redes">
@@ -80,5 +100,7 @@
             </article>
         </section>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
