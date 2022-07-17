@@ -3,23 +3,20 @@
     padding: 0px;
 }
 
-/* header{
-    padding: 10px;
+header{
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-} */
+}
 
 /* ---------------HEADER--------------- */
 .header__nav{
-    padding: 10px;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     display: flex;
     flex-wrap: wrap;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 } 
 
 .header__logo{
     display: flex;
     flex-wrap: wrap;
-/*     width: 6%; */
 }
 
 .header__lista{
@@ -28,6 +25,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
+    font-size: x-large;
 }
 
 .header__lista a{
@@ -55,8 +53,6 @@
 main{
     display: flex;
     flex-wrap: wrap;
-/*     width: 100vw; */
-/*     height: 100vh; */
 }
 
 .section__eventos{
@@ -73,7 +69,7 @@ main{
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    height: 60vh;
+    height: 80vh;
     background-image: url("../resources/images/1.jpg");
     background-position: center;
     background-size: cover;
@@ -82,9 +78,12 @@ main{
     align-items: center;
     align-content: center;
     font-family: 'Pacifico';
-    font-size: 60px;
     color: white;
     text-shadow: 2px 2px 4px black;
+}
+
+.eventos__title{
+    font-size: 80px;
 }
 
 .eventos__listado{
@@ -168,6 +167,7 @@ main{
 /* -------------SERVICIOS-------------- */
 .servicios__grid{
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 15px;
@@ -176,9 +176,13 @@ main{
     justify-content: center;
 }
 
+.servicios__title{
+    font-size: 80px;
+}
+
 .img{
     display: flex;
-    height: 40vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -187,7 +191,7 @@ main{
     align-content: center;
     font-family: 'Montserrat';
     text-shadow: 4px 4px black;
-    font-size: xx-large;
+    font-size: 80px;
     color: white;
     border-radius: 20px;
 }
@@ -196,7 +200,10 @@ main{
     padding: 15px;
     border-radius: 20px;
     font-family: "Montserrat";
-    font-size: 20px;
+}
+
+.txt__lista{
+    list-style: none;
 }
 
 .img1{
