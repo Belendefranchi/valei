@@ -195,10 +195,10 @@ main{
 }
 
 .txt{
-    padding: 15px;
+    padding-left: 15px;
     border-radius: 20px;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .txt__title{
@@ -208,6 +208,7 @@ main{
 
 .txt__lista{
     list-style: none;
+    padding: 2px;
 }
 
 .img1{
@@ -393,15 +394,11 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     .txt3{
         grid-column: 1/2;
         grid-row: 6/7;
-        font-size: 16px;
     }
 }
 
 /* --------MEDIA QUERY DE TABLET-------- */
 @media (min-width: 576px) and (max-width: 992px){
-    header{
-        height: auto;
-    }
 
     .header__logo{
         display: flex;
@@ -440,42 +437,51 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
+
+    .servicios__title{
+        font-size: 50px;
+    }
+
+    .txt__title{
+        font-size: 15px;
+    }
+
+    .txt{
+        font-size: 15px;
+    }
+
+    .img{
+        font-size: 40px;
+    }
     
     .img1{
         grid-column: 1/2;
         grid-row: 1/2;
-        font-size: X-large;
-        
     }
     
     .txt1{
         grid-column: 2/3;
         grid-row: 1/2;
-        font-size: 14px;
     }
     
     .img2{
         grid-column: 2/3;
         grid-row: 2/3;
-        font-size: X-large;
     }
     
     .txt2{
         grid-column: 1/2;
         grid-row: 2/3;
-        font-size: 14px;
     }
     
     .img3{
         grid-column: 1/2;
         grid-row: 3/4;
-        font-size: X-large;
     }
     
     .txt3{
         grid-column: 2/3;
         grid-row: 3/4;
-        font-size: 14px;
     }
 }
 
