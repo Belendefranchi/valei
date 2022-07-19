@@ -201,6 +201,11 @@ main{
     font-size: 20px;
 }
 
+.txt__title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .txt__lista{
     list-style: none;
 }
