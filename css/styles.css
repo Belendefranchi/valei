@@ -167,11 +167,19 @@ main{
 .servicios__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     row-gap: 15px;
     column-gap: 15px;
     padding: 15px;
     justify-content: center;
+}
+
+.servicios__title{
+    font-family: 'Montserrat';
+    font-size: 90px;
+    font-weight: bolder;
+    text-shadow: 4px 4px black;
+    color: white;
 }
 
 .img{
@@ -183,10 +191,6 @@ main{
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-family: 'Montserrat';
-    text-shadow: 4px 4px black;
-    font-size: xx-large;
-    color: white;
     border-radius: 20px;
 }
 
@@ -195,6 +199,10 @@ main{
     border-radius: 20px;
     font-family: "Montserrat";
     font-size: 20px;
+}
+
+.txt__lista{
+    list-style: none;
 }
 
 .img1{
