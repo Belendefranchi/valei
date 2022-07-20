@@ -93,16 +93,16 @@ main{
 .listado__title{
     display: flex;
 /*     flex-direction: column; */
-    font-family: 'Anton';
-    font-size: 25px;
+    font-family: 'Pacifico';
+    font-size: xx-large;
     color: black;
-    text-shadow: 2px 2px 2px grey;
+/*     text-shadow: 2px 2px 2px grey; */
 }
 
 .listado__mes--1{
     display: flex;
     background-color: #D16BA5;
-    font-family: "pacifico";
+    font-family: "Montserrat";
     font-size: x-large;
     color: white;
     text-shadow: 2px 2px black;
@@ -111,7 +111,7 @@ main{
 .listado__mes--2{
     display: flex;
     background-color: #86A8E7;
-    font-family: "pacifico";
+    font-family: "Montserrat";
     font-size: x-large;
     color: white;
     text-shadow: 2px 2px black;
@@ -120,7 +120,7 @@ main{
 .listado__mes--3{
     display: flex;
     background-color: #5FFBF1;
-    font-family: "pacifico";
+    font-family: "Montserrat";
     font-size: x-large;
     color: white;
     text-shadow: 2px 2px black;
@@ -128,7 +128,7 @@ main{
 
 .listado__item{
     display: flex;
-    font-family: 'Anton';
+    font-family: 'Montserrat';
     color: black;
     list-style: none;
     padding-left: 25px; 
@@ -166,6 +166,7 @@ main{
 /* -------------SERVICIOS-------------- */
 .servicios__grid{
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 15px;
@@ -194,6 +195,10 @@ main{
     border-radius: 20px;
 }
 
+.img{
+    font-size: 50px;
+}
+
 .txt{
     padding-left: 15px;
     border-radius: 20px;
@@ -209,6 +214,15 @@ main{
 .txt__lista{
     list-style: none;
     padding: 2px;
+}
+
+.txt__title{
+    font-family: "Pacifico";
+}
+
+.txt__lista{
+    list-style: none;
+    padding-left: 10px;
 }
 
 .img1{
@@ -248,11 +262,95 @@ main{
     background-color: #5ffbf180;
 }
 
-.img4{
-    grid-column: 1/4;
-    grid-row: 4/5;
-    background-image: url("../resources/images/img1_small.jpg");
+
+/* ---------------CONTACTO---------------- */
+
+.section__contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
+
+.contacto__keyframe{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.contacto__form{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.form__fields{
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+.button{
+    background-image: linear-gradient(#d16ba52a, #d16ba5);
+    border: 1px solid #d16ba5;
+    border-radius: 20px;
+    color: white;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 20px 10px 20px;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+.button:hover{
+    background-image: linear-gradient(#d16ba5, #d16ba52a);
+    transform: translate(2px, 2px);
+}
+
+.keyframe__img{
+    animation-name: loop;
+    animation-iteration-count: infinite;
+    animation-timing-function: 5s;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+/* @keyframe "loop{
+    0%{
+        display: block;
+    }
+    25%{
+        display: none;
+    }
+    50%{
+        display: block;
+    }
+    75%{
+        display: none;
+    }
+    100%{
+        display: block;
+    }
+} */
+
+.keyframe__img{
+    width: 20vw;
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.contacto__form{
+    padding: 20px;
+}
+
+.form__title{
+    font-family: "Pacifico";
+    font-size: xx-large;
+}
+
+.form__fields{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
 
 /* ---------------FOOTER---------------- */
 
@@ -456,7 +554,7 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
     
     .img1{
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 1/2;     
     }
     
     .txt1{
