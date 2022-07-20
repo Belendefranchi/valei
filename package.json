@@ -1,0 +1,23 @@
+{
+  "name": "coder_29295",
+  "version": "1.0.0",
+  "description": "<h1>Valei - Oficial</h1>\r <p>Sitio de prueba creado para el curso de desarrollo web</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belendefranchi/valei.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Belendefranchi/valei/issues"
+  },
+  "homepage": "https://github.com/Belendefranchi/valei#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
