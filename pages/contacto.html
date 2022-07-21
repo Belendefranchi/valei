@@ -28,22 +28,24 @@
     <main>
         <section class="section__contacto">
             <article class="contacto__keyframe">
-                <img class="keyframe__img" src="../resources/images/consola2.jpg" alt="imagen consola">
+                <div class="keyframe__img"></div>
             </article>
             <article class="contacto__form">
                 <h2 class="form__title">Contáctanos</h2>
-                <form class="form__fields" method="post">
+                <form method="post">
                     <div class="form__fields">
-                        <label>Nombre</label>
+                        <label class="form__labels">Nombre</label>
                         <input type="text">
-                    </div>
-                    <div class="form__fields">
-                        <label>Email</label>
+                        <label class="form__labels">Apellido</label>
+                        <input type="text">
+                        <label class="form__labels">Ciudad</label>
+                        <input type="text">
+                        <label class="form__labels">Provincia</label>
+                        <input type="text">
+                        <label class="form__labels">Email</label>
                         <input type="email">
-                    </div>
-                    <div>
-                        <label>Deja tu comentario</label>
-                        <textarea name="" id="" cols="45" rows="10"></textarea>
+                        <label class="form__labels">Dejá tu comentario</label>
+                        <textarea name="" id="" cols="1" rows="10"></textarea>
                     </div>
                     <div>
                         <input class="button" type="submit" value="Enviar Formulario">
@@ -52,9 +54,6 @@
                 </form>
             </article>
         </section>
-<!--         <section>
-            <img class="contacto__img" src="../resources/images/8.jpg" alt="Valei">
-        </section> -->
     </main>
     <footer>
         <section class="section__redes">
