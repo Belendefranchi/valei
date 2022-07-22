@@ -251,28 +251,8 @@ main{
 
 /* ---------------CONTACTO---------------- */
 
-.section__contacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.contacto__keyframe{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.contacto__form{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
 .keyframe__img{
-    display: flex;
-    height: 80vh;
     width: 30vw;
-    margin: 50px;
-    background-image: url(../resources/images/consola2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,39 +401,7 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
         grid-row: 6/7;
     }
 
-/* ---------------CONTACTO-------------- */
-
-    .section__contacto{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .contacto__form{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .contacto__keyframe{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .keyframe__img{
-        display: flex;
-        width: 80vw;
-        height: 40vh;
-        background-position-y: 80%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .button{
-        font-size: 18px;
-        margin-left: 22px;
-        margin-right: 22px;
-    }
 }
-
 /* --------MEDIA QUERY DE TABLET-------- */
 @media (min-width: 576px) and (max-width: 992px){
 
@@ -547,39 +495,6 @@ El 0,1% son galerias cuadriculadas que pueden tener hasta 3 columnas
         grid-row: 3/4;
     }
 
-/* ---------------CONTACTO-------------- */
-
-    .section__contacto{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .contacto__form{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .contacto__keyframe{
-        display: flex;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .keyframe__img{
-        display: flex;
-        width: 40vw;
-        background-position-y: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .button{
-        font-size: 18px;
-        margin-left: 22px;
-        margin-right: 22px;
-    }
 }
 
 
