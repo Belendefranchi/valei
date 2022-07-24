@@ -93,7 +93,6 @@ main{
 
 .listado__title{
     display: flex;
-/*     flex-direction: column; */
     font-family: 'Anton';
     font-size: 25px;
     color: black;
@@ -163,6 +162,29 @@ main{
 
 /* -----------SOBRE-NOSOTROS----------- */
 
+.nosotros__img{
+    width: 40vw;
+}
+
+.nosotros__title{
+    font-family: "Pacifico";
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.nosotros__txt{
+    font-family: "Montserrat";
+    font-size: large;
+}
+
+.nosotros__txt--final{
+    font-family: "Pacifico";
+    font-size: x-large;
+    padding-top: 20px;
+}
+
 
 /* -------------SERVICIOS-------------- */
 .servicios__grid{
@@ -207,7 +229,8 @@ main{
 }
 
 .txt__title{
-    font-size: 25px;
+    font-family: "Pacifico";
+    font-size: xx-large;
     font-weight: bold;
 }
 
@@ -239,6 +262,13 @@ main{
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.contacto__title{
+    font-family: "Pacifico";
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 20px;
 }
 
 .contacto__button{
