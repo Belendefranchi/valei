@@ -15,11 +15,11 @@
     <title>VALEI - Contacto</title>
 </head>
 <body>
-    <header><!-- ENCABEZADO -->
-        <nav class="navbar navbar-expand-lg bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../resources/logos/logo_fondo_blanco_circulo-modified2.png" alt="">
+                    <img src="../resources/logos/logo_fondo_blanco_circulo-modified2.png" alt="valei oficial">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,12 +48,12 @@
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row justify-content-md-center">
+            <div class="row">
                 <div class="col-md-4 text-center">
                     <img class="keyframe__img" src="../resources/images/consola2.jpg" alt="imagen consola">
                 </div>
                 <div class="col-md-8">
-                    <p class="contacto__title">Contáctanos</p>
+                    <h1 class="contacto__title">Contáctanos</h1>
                     <form action="">
                         <div class="mb-1">
                             <label for="formGroupExampleInput" class="form-label">Nombre:</label>
@@ -70,7 +70,7 @@
                         <div class="mb-1">
                             <label for="formGroupExampleInput" class="form-label">Provincia:</label>
                             <select class="form-select" id="formGroupExampleInput" required>
-                                <option selected disabled value="">Elegir...</option>
+                                <option selected disabled value=""></option>
                                 <option>Buenos Aires</option>
                                 <option>Catamarca</option>
                                 <option>Chubut</option>
@@ -97,14 +97,15 @@
                         </div>
                         <div class="mb-1">
                             <label for="formGroupExampleInput" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="formGroupExampleInput">
                         </div>
                         <div class="mb-1">
                             <label for="formGroupExampleInput" class="form-label">Dejanos tu mensaje:</label>
                             <textarea class="form-control" id="formGroupExampleInput" rows="3"></textarea>
                         </div>
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <input class="btn btn-secondary contacto__button" type="submit"></input>
+                        <div class="d-grid gap-4 col-6 d-md-flex justify-content-md-center mx-auto">
+                            <button class="btn btn-secondary contacto__button" type="submit">Enviar formulario</button>
+                            <button class="btn btn-secondary contacto__button" type="reset">Borrar formulario</button>
                         </div>
                     </form>
                 </div>
@@ -112,18 +113,30 @@
         </div>
     </main>
     <footer>
-        <section class="section__redes">
-            <h2 class="footer__title">Redes Sociales</h2>
-            <article class="footer__redes">
-                <img src="../resources/logos/facebook.png" alt="facebook">
-                <a href="https://www.facebook.com/valeioficial ">/valeioficial</a>
-                <img src="../resources/logos/instagram.png" alt="instagram">
-                <a href="https://www.instagram.com/valeioficial/">@valeioficial</a>
-                <a href="https://www.instagram.com/mattle/">@mattle</a>
-                <img src="../resources/logos/youtube.png" alt="youtube">
-                <a href="https://www.youtube.com/matiasleiva">/matiasleiva</a>
-            </article>
-        </section>
+        <div class="container-fluid">
+            <div class="row footer__redes">
+                <div class="col-md-4 col-xs-12 redes">
+                    <p></p>
+                    <h2 class="footer__title">VALEI OFICIAL</h2>
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes2">
+                    <h5 class="footer__title redes2">Seguinos en nuestras redes</h5>
+                    <div class="redes2">
+                        <a href="https://www.facebook.com/valeioficial "><img src="../resources/icons/facebook.png" alt="facebook"></a>               
+                        <a href="https://www.instagram.com/valeioficial/"><img src="../resources/icons/instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/matiasleiva"><img src="../resources/icons/youtube.png" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes3">
+                    <h5 class="footer__title redes3">CONTACTO</h5>
+                    <div class="redes3">
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/whatsapp.png" alt="facebook"> +54 2392 481849</a>
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/mail.png" alt="facebook"> mattle.pf@icloud.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

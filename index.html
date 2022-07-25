@@ -16,10 +16,10 @@
 </head>
 <body>
     <header> <!-- ENCABEZADO -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../resources/logos/logo_fondo_blanco_circulo-modified2.png" alt="">
+                    <img src="../resources/logos/logo_fondo_blanco_circulo-modified2.png" alt="valei oficial">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
         </nav> -->
     </header>
     <main> <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
-        <section class="section__eventos">
+<!--         <section class="section__eventos">
             <article class="eventos__portada">
                 <h2 class="eventos__title">Dj Matías Leiva</h2>
             </article>
@@ -82,13 +82,6 @@
                     <li class="listado__item">Evento 3</li>
                 </ul>
             </article>
-        </section>
-<!--         <section class="section__galeria">
-            <img class="galeria__img" src="resources/images/2.jpg" alt="VALEI 2">
-            <img class="galeria__img" src="resources/images/consola1.jpg" alt="VALEI 3">
-            <img class="galeria__img" src="resources/images/pixel3.jpg" alt="VALEI 4">
-            <img class="galeria__img" src="resources/images/tubos2.jpg" alt="VALEI 5">
-            <img class="galeria__img" src="resources/images/tubos3.jpg" alt="VALEI 6">
         </section> -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -110,24 +103,33 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <section class="section__imagenAbajo">
-            <img src="resources/images/img1_small.jpg" alt="VALEI">
-        </section>
+        </div> 
     </main>
     <footer>
-        <section class="section__redes">
-            <h2 class="footer__title">Redes Sociales</h2>
-            <article class="footer__redes">
-                <img src="resources/logos/facebook.png" alt="facebook">
-                <a href="https://www.facebook.com/valeioficial ">/valeioficial</a>
-                <img src="resources/logos/instagram.png" alt="instagram">
-                <a href="https://www.instagram.com/valeioficial/">@valeioficial</a>
-                <a href="https://www.instagram.com/mattle/">@mattle</a>
-                <img src="resources/logos/youtube.png" alt="youtube">
-                <a href="https://www.youtube.com/matiasleiva">/matiasleiva</a>
-            </article>
-        </section>
+        <div class="container-fluid">
+            <div class="row footer__redes">
+                <div class="col-md-4 col-xs-12 redes">
+                    <p></p>
+                    <h2 class="footer__title">VALEI OFICIAL</h2>
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes2">
+                    <h5 class="footer__title redes2">Seguinos en nuestras redes</h5>
+                    <div class="redes2">
+                        <a href="https://www.facebook.com/valeioficial "><img src="../resources/icons/facebook.png" alt="facebook"></a>               
+                        <a href="https://www.instagram.com/valeioficial/"><img src="../resources/icons/instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/matiasleiva"><img src="../resources/icons/youtube.png" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes3">
+                    <h5 class="footer__title redes3">CONTACTO</h5>
+                    <div class="redes3">
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/whatsapp.png" alt="facebook"> +54 2392 481849</a>
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/mail.png" alt="facebook"> mattle.pf@icloud.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
