@@ -8,83 +8,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Lobster&family=Montserrat:wght@400;900&family=Open+Sans&family=Pacifico&family=Playfair+Display:ital,wght@1,500&family=Raleway:wght@300&family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>VALEI - Servicios</title>
 </head>
 <body>
-    <header> <!-- ENCABEZADO -->
-        <nav class="header__nav"> <!-- barra de navegacion -->
-            <img class="header__logo" src="../resources/logos/logo_circulo.png" alt="Valei logo">
-            <ul class="header__lista">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>
-                <li class="header__item"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="header__item"><a href="servicios.html">Servicios</a></li>
-                <li class="header__item"><a href="reserva.html">Reservar Evento</a></li>
-                <li class="header__item"><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../resources/logos/logo_fondo_blanco_circulo-modified2.png" alt="valei oficial">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reservar Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main> <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
-        <section class="servicios__grid">
-            <article class="img img1">
-                <h2 class="servicios__title animate__animated animate__slideInLeft">shows</h2>
-            </article>
-            <article class="txt txt1">
-                <h2 class="txt__title">Ofrecemos servicios aptos para escenarios:</h2>
-                <ul>
-                    <li class="txt__lista">Sonido Line Array</li>
-                    <li class="txt__lista">Monitoreo On Stage</li>
-                    <li class="txt__lista">Consola digital</li>
-                    <li class="txt__lista">Móviles beam</li>
-                    <li class="txt__lista">Tachos led RGBWA+UV</li>
-                    <li class="txt__lista">Módulos y pantallas LED</li>
-                </ul>
-            </article>
-            <article class="img img2">
-                <h2 class="servicios__title animate__animated animate__slideInRight">fiestas</h2>
-            </article>
-            <article class="txt txt2">
-                <h2 class="txt__title">Nos encargamos del montaje técnico de tu fiesta:</h2>
-                <ul>
-                    <li class="txt__lista">Dj y animación</li>
-                    <li class="txt__lista">Iluminación Beam 7R</li>
-                    <li class="txt__lista">Lanzapapeles</li>
-                    <li class="txt__lista">Pantallas led</li>
-                    <li class="txt__lista">Pixel Ball</li>
-                    <li class="txt__lista">Tubos Led</li>
-                </ul>
-            </article>
-            <article class="img img3">
-                <h2 class="servicios__title title animate__animated animate__slideInLeft">eventos</h2>
-            </article>
-            <article class="txt txt3">
-                <h2 class="txt__title">Realizamos la producción técnica de todo tipo de eventos:</h2>
-                <ul>
-                    <li class="txt__lista">Ambientacion, perimetrales, puntuales</li>
-                    <li class="txt__lista">Iluminación Beam 7R</li>
-                    <li class="txt__lista">Lanzapapeles</li>
-                    <li class="txt__lista">Pantallas led</li>
-                    <li class="txt__lista">Pixel Ball</li>
-                    <li class="txt__lista">Tubos Led</li>
-                </ul>
-            </article>
-        </section>
+    <main>
+        <div class="container-fluid">
+            <div class="row servicios__grid">
+                <h1 class="servicios__title">Nuestros servicios</h1>
+                <div class="col-md-4 col-xs-12 img img1">
+                    <p class="servicios__img">shows</p>
+                </div>
+                <div class="col-md-8 col-xs-12 txt txt1">
+                    <h2>Ofrecemos servicios aptos para escenarios:</h2>
+                    <ul>
+                        <li class="txt__lista">Sonido Line Array</li>
+                        <li class="txt__lista">Monitoreo On Stage</li>
+                        <li class="txt__lista">Consola digital</li>
+                        <li class="txt__lista">Móviles beam</li>
+                        <li class="txt__lista">Tachos led RGBWA+UV</li>
+                        <li class="txt__lista">Módulos y pantallas LED</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row servicios__grid">
+                <div class="col-md-8 col-xs-12 txt txt2">
+                    <h2>Nos encargamos del montaje técnico de tu fiesta:</h2>
+                    <ul>
+                        <li class="txt__lista">Dj y animación</li>
+                        <li class="txt__lista">Iluminación Beam 7R</li>
+                        <li class="txt__lista">Lanzapapeles</li>
+                        <li class="txt__lista">Pantallas led</li>
+                        <li class="txt__lista">Pixel Ball</li>
+                        <li class="txt__lista">Tubos Led</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xs-12 img img2">
+                    <p class="servicios__img">fiestas</p>
+                </div>
+            </div>
+            <div class="row servicios__grid">
+                <div class="col-md-4 col-xs-12 img img3">
+                    <p class="servicios__img">eventos</p>
+                </div>
+                <div class="col-md-8 col-xs-12 txt txt3">
+                    <h2>Realizamos la producción técnica de todo tipo de eventos:</h2>
+                    <ul>
+                        <li class="txt__lista">Ambientacion, perimetrales, puntuales</li>
+                        <li class="txt__lista">Iluminación Beam 7R</li>
+                        <li class="txt__lista">Lanzapapeles</li>
+                        <li class="txt__lista">Pantallas led</li>
+                        <li class="txt__lista">Pixel Ball</li>
+                        <li class="txt__lista">Tubos Led</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <section class="section__redes">
-            <h2 class="footer__title">Redes Sociales</h2>
-            <article class="footer__redes">
-                <img src="../resources/logos/facebook.png" alt="facebook">
-                <a href="https://www.facebook.com/matiasleiva523">/matiasleiva523</a>
-                <img src="../resources/logos/instagram.png" alt="instagram">
-                <a href="https://www.instagram.com/valeioficial/">@valeioficial</a>
-                <a href="https://www.instagram.com/mattle/">@mattle</a>
-                <img src="../resources/logos/youtube.png" alt="youtube">
-                <a href="https://www.youtube.com/matiasleiva">/matiasleiva</a>
-            </article>
-        </section>
+        <div class="container-fluid">
+            <div class="row footer__redes">
+                <div class="col-md-4 col-xs-12 redes">
+                    <p></p>
+                    <h2 class="footer__title">VALEI OFICIAL</h2>
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes2">
+                    <h5 class="footer__title redes2">Seguinos en nuestras redes</h5>
+                    <div class="redes2">
+                        <a href="https://www.facebook.com/valeioficial "><img src="../resources/icons/facebook.png" alt="facebook"></a>               
+                        <a href="https://www.instagram.com/valeioficial/"><img src="../resources/icons/instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/matiasleiva"><img src="../resources/icons/youtube.png" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 redes redes3">
+                    <h5 class="footer__title redes3">CONTACTO</h5>
+                    <div class="redes3">
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/whatsapp.png" alt="facebook"> +54 2392 481849</a>
+                        <a href="mailto:mattle.pf@icloud.com"><img src="../resources/icons/mail.png" alt="facebook"> mattle.pf@icloud.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
