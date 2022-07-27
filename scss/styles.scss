@@ -18,9 +18,7 @@ header{
     padding: 20px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-
     .eventos{
-
         &__portada{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -36,28 +34,22 @@ header{
             font-family: 'Pacifico';
             color: white;
             text-shadow: 2px 2px 4px black;
-
             .eventos{
-
                 &__title{
                     font-size: 80px;
                 }
             }
         }
-
         &__listado{
             grid-column: 2/3;
-            grid-row: 1/2;
-        
-            .listado{
-            
+            grid-row: 1/2;        
+            .listado{            
                 &__title{
                     display: flex;
                     font-family: 'Anton';
                     font-size: 25px;
                     color: black;
-                }
-                
+                }                
                 &__mes--1{
                     display: flex;
                     background-color: #D16BA5;
@@ -65,8 +57,7 @@ header{
                     font-size: x-large;
                     color: white;
                     text-shadow: 2px 2px black;
-                }
-                
+                }               
                 &__mes--2{
                     display: flex;
                     background-color: #86A8E7;
@@ -75,7 +66,6 @@ header{
                     color: white;
                     text-shadow: 2px 2px black;
                 }
-                
                 &__mes--3{
                     display: flex;
                     background-color: #5FFBF1;
@@ -84,9 +74,7 @@ header{
                     color: white;
                     text-shadow: 2px 2px black;
                 }
-
                 &__lista{
-
                     &__item{
                         display: flex;
                         font-family: 'Montserrat';
