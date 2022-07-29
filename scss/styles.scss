@@ -90,25 +90,27 @@ header{
 
 /* -----------------SOBRE-NOSOTROS----------------- */
 
-.nosotros__title{
-    font-family: "Pacifico";
-    font-size: xx-large;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-.nosotros__txt{
-    font-family: "Montserrat";
-    font-size: large;
-}
-.nosotros__txt--final{
-    font-family: "Pacifico";
-    font-size: x-large;
-    padding-top: 20px;
-}
-.nosotros__img{
-    width: 40vw;
-    padding: 20px;
+.nosotros{
+    &__title{
+        font-family: "Pacifico";
+        font-size: xx-large;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    &__txt{
+        font-family: "Montserrat";
+        font-size: large;
+    }
+    &__txt--final{
+        font-family: "Pacifico";
+        font-size: x-large;
+        padding-top: 20px;
+    }
+    &__img{
+        width: 40vw;
+        padding: 20px;
+    }
 }
 
 /* --------------SERVICIOS---------------- */
@@ -167,34 +169,36 @@ header{
 
 /* ---------------CONTACTO---------------- */
 
-.contacto__img{
-    width: 30vw;
-    padding: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 80px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-.contacto__title{
-    font-family: "Pacifico";
-    font-size: xx-large;
-    font-weight: bolder;
-    padding-top: 20px;
-}
-.contacto__button{
-    background-color: #d16ba594;
-    border-color: #d16ba594;
-    margin: 10px;
-    &:hover{
-        background-color: #D16BA5;
-        border-color: #d16ba594;
-        transform: translate(2px, 2px);
-        transition: all 0.2s;
+.contacto{
+    &__img{
+        width: 30vw;
+        padding: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 80px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
-}
+    &__title{
+        font-family: "Pacifico";
+        font-size: xx-large;
+        font-weight: bolder;
+        padding-top: 20px;
+    }
+    &__button{
+        background-color: #d16ba594;
+        border-color: #d16ba594;
+        margin: 10px;
+        &:hover{
+            background-color: #D16BA5;
+            border-color: #d16ba594;
+            transform: translate(2px, 2px);
+            transition: all 0.2s;
+        }
+    }
+} 
 
 /* ----------------FOOTER----------------- */
 
