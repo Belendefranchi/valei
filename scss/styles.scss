@@ -9,13 +9,17 @@ header{
     background-color: #d16ba5;
 }
 
+.breadcrumb{
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
 /* ----------------INDEX---------------- */
 
 .section__eventos{
     display: grid;
     row-gap: 15px;
     column-gap: 15px;
-    padding: 20px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     .eventos{
@@ -23,8 +27,6 @@ header{
             grid-column: 1/2;
             grid-row: 1/2;
             display: flex;
-            height: 80vh;
-            background-image: url("../resources/images/1.jpg");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -45,34 +47,27 @@ header{
             grid-row: 1/2;        
             .listado{            
                 &__title{
+                    font-family: "Pacifico";
+                    font-size: xx-large;
+                    font-weight: bold;
+                    padding-top: 20px;
+                    padding-bottom: 40px;
+                }
+                &__mes{
                     display: flex;
-                    font-family: 'Anton';
-                    font-size: 25px;
-                    color: black;
-                }                
+                    font-family: "Montserrat";
+                    font-size: x-large;
+                    color: white;
+                    text-shadow: 2px 2px black;
+                }  
                 &__mes--1{
-                    display: flex;
                     background-color: #D16BA5;
-                    font-family: "Montserrat";
-                    font-size: x-large;
-                    color: white;
-                    text-shadow: 2px 2px black;
-                }               
+                }
                 &__mes--2{
-                    display: flex;
                     background-color: #86A8E7;
-                    font-family: "Montserrat";
-                    font-size: x-large;
-                    color: white;
-                    text-shadow: 2px 2px black;
                 }
                 &__mes--3{
-                    display: flex;
                     background-color: #5FFBF1;
-                    font-family: "Montserrat";
-                    font-size: x-large;
-                    color: white;
-                    text-shadow: 2px 2px black;
                 }
                 &__lista{
                     &__item{

@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reserva.html">Reservar Evento</a>
+                            <a class="nav-link active" aria-current="page" href="reserva.html">Reservar Evento</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -46,7 +46,13 @@
             </div>
         </nav>
     </header>
-    <main> <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
+    <main>
+        <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Reservar Evento</li>
+            </ol>
+        </div>
         <img src="../resources/images/img5_small.jpg" alt="Cotizacion">
     </main>
     <footer>
