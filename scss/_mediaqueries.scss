@@ -1,0 +1,54 @@
+@media (min-width: 320px) and (max-width: 575px){
+
+    /* -----------------INDEX------------------ */
+    
+        .section__eventos{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            .eventos__portada{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 40px;
+            }
+            .eventos__listado{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+    
+    /* ----------------SERVICIOS-------------- */
+    
+        .servicios__grid{
+            row-gap: 10px;
+        }
+    }
+    /* --------MEDIA QUERY DE TABLET-------- */
+    @media (min-width: 576px) and (max-width: 992px){
+    
+    /* -----------------INDEX------------------ */
+    
+        .section__eventos{
+            .eventos__portada{
+                font-size: 30px;
+            }
+        }
+    
+    /* ----------------SERVICIOS-------------- */
+        
+        .servicios__grid{
+            row-gap: 10px;
+            .servicios__title{
+                font-size: 60px;
+            }
+            .img{
+                height: 50vh;
+                .servicios__img{
+                    font-size: 50px;
+                }
+            }
+            .txt{
+                border-radius: 12px;
+                font-size: 14px;
+            }
+        }
+    }

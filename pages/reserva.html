@@ -32,8 +32,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="servicios.html">Shows</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Fiestas</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Eventos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="reserva.html">Reservar Evento</a>
@@ -53,7 +58,105 @@
                 <li class="breadcrumb-item active" aria-current="page">Reservar Evento</li>
             </ol>
         </div>
-        <img src="../resources/images/img5_small.jpg" alt="Cotizacion">
+        <div class="container-fluid">
+            <h2 class="titles__h2">Reservá tu evento</h2>
+            <div class="row mb-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Evento</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Persona de contacto</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Fecha del Evento</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Fecha de la Cotización</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="titles__h3">Servicios a incluir</h3>
+            <form action="">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-1" scope="col">#</th>
+                            <th class="col-sm-1" scope="col"></th>
+                            <th class="col-sm-8" scope="col">Servicio</th>
+                            <th class="col-sm-1" scope="col">Cantidad</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Dj + Animación</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Sonido Ev de alta definición (hasta 300 personas)</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                    </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Cabezales móviles beam 7R</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Spotled Nebula 6</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Tubos led madrix</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Pixelball madrix (200 esferas)</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Lanza papeles</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Máquina de humo</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Cuadrilátero de truss 9x4x3 m</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                            <td>Bolas espejadas</td>
+                            <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>                     </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-grid gap-4 col-6 d-md-flex justify-content-md-center mx-auto">
+                        <button class="btn btn-secondary contacto__button" type="submit">Enviar formulario</button>
+                        <button class="btn btn-secondary contacto__button" type="reset">Borrar formulario</button>
+                    </div>
+                </form>
+        </div>
     </main>
     <footer>
         <div class="container-fluid">
