@@ -36,40 +36,6 @@ footer a {
       flex-direction: column;
       align-items: flex-end; }
 
-@media (min-width: 320px) and (max-width: 575px) {
-  /* -----------------INDEX------------------ */
-  .section__eventos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-    .section__eventos .eventos__portada {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      font-size: 40px; }
-    .section__eventos .eventos__listado {
-      grid-column: 1/2;
-      grid-row: 2/3; }
-  /* ----------------SERVICIOS-------------- */
-  .servicios__grid {
-    row-gap: 10px; } }
-
-/* --------MEDIA QUERY DE TABLET-------- */
-@media (min-width: 576px) and (max-width: 992px) {
-  /* -----------------INDEX------------------ */
-  .section__eventos .eventos__portada {
-    font-size: 30px; }
-  /* ----------------SERVICIOS-------------- */
-  .servicios__grid {
-    row-gap: 10px; }
-    .servicios__grid .servicios__title {
-      font-size: 60px; }
-    .servicios__grid .img {
-      height: 50vh; }
-      .servicios__grid .img .servicios__img {
-        font-size: 50px; }
-    .servicios__grid .txt {
-      border-radius: 12px;
-      font-size: 14px; } }
-
 * {
   margin: 0px;
   padding: 0px; }
@@ -132,7 +98,7 @@ header {
       color: white;
       text-shadow: 2px 2px black; }
     .section__eventos .eventos__listado .listado__mes--1 {
-      background-color: #D16BA5; }
+      background-color: #d16ba5; }
     .section__eventos .eventos__listado .listado__mes--2 {
       background-color: #86A8E7; }
     .section__eventos .eventos__listado .listado__mes--3 {
@@ -207,6 +173,10 @@ header {
   .servicios__grid .txt3 {
     background-color: #5ffbf180; }
 
+/* ---------------RESERVA----------------- */
+.reserva__img {
+  border-radius: 40px; }
+
 /* ---------------CONTACTO---------------- */
 .contacto__img {
   width: 30vw;
@@ -234,3 +204,45 @@ header {
     border-color: #d16ba594;
     transform: translate(2px, 2px);
     transition: all 0.2s; }
+
+@media (min-width: 320px) and (max-width: 575px) {
+  /* -----------------INDEX------------------ */
+  .section__eventos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .section__eventos .eventos__portada {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-size: 40px; }
+    .section__eventos .eventos__listado {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+  /* ----------------SERVICIOS-------------- */
+  .servicios__grid {
+    row-gap: 10px; } }
+
+/* --------MEDIA QUERY DE TABLET-------- */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* -----------------INDEX------------------ */
+  .section__eventos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .section__eventos .eventos__portada {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      font-size: 30px; }
+    .section__eventos .eventos__listado {
+      grid-column: 1/3;
+      grid-row: 2/3; }
+  /* ----------------SERVICIOS-------------- */
+  .servicios__grid {
+    row-gap: 10px; }
+    .servicios__grid .servicios__title {
+      font-size: 60px; }
+    .servicios__grid .img {
+      height: 50vh; }
+      .servicios__grid .img .servicios__img {
+        font-size: 50px; }
+    .servicios__grid .txt {
+      border-radius: 12px;
+      font-size: 14px; } }

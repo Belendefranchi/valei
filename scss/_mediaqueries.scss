@@ -28,8 +28,16 @@
     /* -----------------INDEX------------------ */
     
         .section__eventos{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
             .eventos__portada{
+                grid-column: 1/3;
+                grid-row: 1/2;
                 font-size: 30px;
+            }
+            .eventos__listado{
+                grid-column: 1/3;
+                grid-row: 2/3;
             }
         }
     

@@ -1,6 +1,6 @@
 @import "variables";
 @import "footer";
-@import "mediaqueries";
+
 
 *{
     margin: 0px;
@@ -82,13 +82,13 @@ header{
                     text-shadow: 2px 2px black;
                 }  
                 &__mes--1{
-                    background-color: #D16BA5;
+                    background-color: $color-principal;
                 }
                 &__mes--2{
-                    background-color: #86A8E7;
+                    background-color: $color-intermedio;
                 }
                 &__mes--3{
-                    background-color: #5FFBF1;
+                    background-color: $color-secundario;
                 }
                 &__lista{
                     &__item{
@@ -183,6 +183,12 @@ header{
     }
 }
 
+/* ---------------RESERVA----------------- */
+
+.reserva__img{
+    border-radius: 40px;
+}
+
 /* ---------------CONTACTO---------------- */
 
 .contacto{
@@ -216,3 +222,4 @@ header{
     }
 } 
 
+@import "mediaqueries";

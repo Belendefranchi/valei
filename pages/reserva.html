@@ -15,7 +15,7 @@
     <title>VALEI - Reservar Evento</title>
 </head>
 <body>
-    <header> <!-- ENCABEZADO -->
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -58,36 +58,43 @@
                 <li class="breadcrumb-item active" aria-current="page">Reservar Evento</li>
             </ol>
         </div>
-        <div class="container-fluid">
-            <h2 class="titles__h2">Reservá tu evento</h2>
-            <div class="row mb-2">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Evento</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
+        <form action="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="titles__h2">Reservá tu evento</h2>
+                        <div class="row mb-2">
+                            <label for="colFormLabel" class="col-sm-4 col-form-label">Evento</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="colFormLabel" class="col-sm-4 col-form-label">Persona de contacto</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="colFormLabel" class="col-sm-4 col-form-label">Fecha del Evento</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="colFormLabel" class="col-sm-4 col-form-label">Fecha de la Cotización</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid reserva__img d-flex justify-content-center" src="../resources/images/4.jpg" alt="evento">
+                    </div>
                 </div>
             </div>
-            <div class="row mb-2">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Persona de contacto</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
-                </div>
-            </div>
-            <div class="row mb-2">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Fecha del Evento</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
-                </div>
-            </div>
-            <div class="row mb-2">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Fecha de la Cotización</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <h3 class="titles__h3">Servicios a incluir</h3>
-            <form action="">
+            <div class="container">
+                <h3 class="titles__h3">Servicios a incluir</h3>
                 <table class="table">
                     <thead>
                         <tr>
@@ -155,8 +162,8 @@
                         <button class="btn btn-secondary contacto__button" type="submit">Enviar formulario</button>
                         <button class="btn btn-secondary contacto__button" type="reset">Borrar formulario</button>
                     </div>
-                </form>
-        </div>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="container-fluid">
