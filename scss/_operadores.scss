@@ -1,0 +1,25 @@
+/* --------------MAP--------------- */
+
+$meses:(
+    mes1: #d16ba5,
+    mes2: #86A8E7,
+    mes3: #5FFBF1
+);
+
+@each $mes, $color in $meses{
+    .color-#{$mes}{
+        background-color: #{$color};
+    }
+}
+
+$imagenes:(
+    img1: url("../resources/images/2.jpg"),
+    img2: url("../resources/images/pixel1.jpg"),
+    img3: url("../resources/images/tubos1.jpg")
+);
+
+@each $img, $url in $imagenes{
+    .img-#{$img}{
+        background-image: #{$url};
+    }
+}
