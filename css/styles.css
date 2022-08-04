@@ -67,11 +67,14 @@ header {
   padding-top: 5px;
   padding-left: 40px; }
 
-.titles, .titles__h2, .titles__h3 {
+.titles, .titles__h1, .titles__h2, .titles__h3 {
   font-family: "Pacifico";
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+.titles__h1 {
+  font-size: 5rem; }
 
 .titles__h2 {
   font-size: 2.5rem; }
@@ -89,13 +92,6 @@ header {
   .section__eventos .eventos__portada {
     grid-column: 1/2;
     grid-row: 1/2;
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     font-family: "Pacifico";
     color: white;
     text-shadow: 2px 2px 4px black; }
@@ -160,6 +156,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    align-self: center;
     border-radius: 20px; }
     .servicios__grid .img .servicios__img {
       font-family: "Montserrat";
@@ -185,16 +182,20 @@ header {
   border-radius: 40px; }
 
 /* ---------------CONTACTO---------------- */
-.contacto__img {
-  width: 30vw;
-  padding: 20px;
+.img {
+  display: flex;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 80px;
   justify-content: center;
   align-items: center;
-  align-content: center; }
+  align-content: center;
+  align-self: center; }
+
+.contacto__img {
+  width: 30vw;
+  padding: 20px;
+  border-radius: 80px; }
 
 .contacto__title {
   font-family: "Pacifico";
@@ -207,7 +208,7 @@ header {
   border-color: #d16ba594;
   margin: 10px; }
   .contacto__button:hover {
-    background-color: #D16BA5;
+    background-color: #d16ba5;
     border-color: #d16ba594;
     transform: translate(2px, 2px);
     transition: all 0.2s; }
