@@ -156,7 +156,6 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
-    align-self: center;
     border-radius: 20px; }
     .servicios__grid .img .servicios__img {
       font-family: "Montserrat";
@@ -189,8 +188,7 @@ header {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  align-self: center; }
+  align-content: center; }
 
 .contacto__img {
   width: 30vw;
