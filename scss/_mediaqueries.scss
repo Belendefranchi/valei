@@ -1,3 +1,5 @@
+    /* --------MEDIA QUERY DE CELULAR-------- */
+
 @media (min-width: 320px) and (max-width: 575px){
 
     /* -----------------INDEX------------------ */
@@ -20,6 +22,12 @@
     
         .servicios__grid{
             row-gap: 10px;
+        }
+
+    /* -----------------RESERVA--------------- */
+
+        .table{
+            padding: 10px 0px 10px 0px;
         }
     }
     /* --------MEDIA QUERY DE TABLET-------- */
@@ -58,5 +66,10 @@
                 border-radius: 12px;
                 font-size: 14px;
             }
+        }
+    /* -----------------RESERVA--------------- */
+
+        .table{
+            padding: 10px 0px 10px 0px;
         }
     }

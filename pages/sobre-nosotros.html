@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+    <!------------------------------------ NAVEGACION -------------------------------------->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -37,9 +38,15 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="servicios.html">Shows</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Fiestas</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Eventos</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="shows.html">Shows</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="fiestas.html">Fiestas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="eventos.html">Eventos</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -54,29 +61,34 @@
         </nav>
     </header>
     <main>
+    <!------------------------------------ BREADCRUMBS ------------------------------------->
         <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Inicio</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">Sobre Nosotros</li>
             </ol>
         </div>
         <div class="container-fluid">
+    <!-------------------------------------- CONTENIDO ---------------------------------------->
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <h1 class="titles__h2 text-center">Quiénes Somos</h1>
+                <div class="col-md-6 d-flex flex-column justify-content-around">
+                    <h1 class="titles__h1 text-center">Quiénes Somos</h1>
                     <p class="nosotros__txt text-center">Somos una empresa dedicada a hacer tu fiesta soñada, una realidad.</p>
                     <p class="nosotros__txt text-center">Con más de 10 años de experiencia en el rubro, ofrecemos soluciones adaptables a la necesidad y estilo de cada cliente.</p>
                     <p class="nosotros__txt text-center">Realizamos la organizacion de cada evento, nos encargamos del asesoramiento, logística, montaje y operación técnica. Contamos con equipos de primer nivel y personal especialmente capacitado para cada tarea. Trabajamos con djs profesionales, capaces de seleccionar la música adecuada para cada situación.</p>
                     <p class="nosotros__txt text-center">Nos encargamos de crear momentos inolvidables, ya sea en casamientos, fiestas de 15, eventos corporativos, eventos al aire libre...</p>
                     <p class="nosotros__txt--final text-center">Tenemos muchas ganas de hacer realidad tu noche soñada</p>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center d-flex justify-content-center align-items-center">
                     <img class="img-fluid nosotros__img" src="../resources/images/3_crop.png" alt="Dj Matías Leiva">
                 </div>
             </div>
         </div>
     </main>
     <footer>
+    <!-------------------------------------- FOOTER ---------------------------------------->
         <div class="container-fluid">
             <div class="row footer__redes">
                 <div class="col-md-4 col-xs-12 redes">

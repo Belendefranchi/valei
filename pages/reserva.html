@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+    <!------------------------------------ NAVEGACION -------------------------------------->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -37,9 +38,15 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="servicios.html">Shows</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Fiestas</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Eventos</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="shows.html">Shows</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="fiestas.html">Fiestas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="eventos.html">Eventos</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -54,39 +61,41 @@
         </nav>
     </header>
     <main>
+    <!------------------------------------ BREADCRUMBS ------------------------------------->
         <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Reservar Evento</li>
             </ol>
         </div>
+    <!------------------------------------- FORMULARIO -------------------------------------->
         <form action="">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="titles__h2">Reservá tu evento</h2>
+                        <h1 class="titles__h1">Reservá tu evento</h1>
                         <div class="row mb-2">
-                            <label for="colFormLabel" class="col-sm-4 col-form-label">Evento</label>
+                            <label for="colFormLabel" class="col-sm-4 col-form-label txt">Evento</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                                <input type="text" class="form-control" id="colFormLabel">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="colFormLabel" class="col-sm-4 col-form-label">Persona de contacto</label>
+                            <label for="colFormLabel" class="col-sm-4 col-form-label txt">Persona de contacto</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                                <input type="text" class="form-control" id="colFormLabel">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="colFormLabel" class="col-sm-4 col-form-label">Fecha del Evento</label>
+                            <label for="colFormLabel" class="col-sm-4 col-form-label txt">Fecha del Evento</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                                <input type="text" class="form-control" id="colFormLabel">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="colFormLabel" class="col-sm-4 col-form-label">Fecha de la Cotización</label>
+                            <label for="colFormLabel" class="col-sm-4 col-form-label txt">Fecha de la Cotización</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                                <input type="text" class="form-control" id="colFormLabel">
                             </div>
                         </div>
                     </div>
@@ -96,83 +105,88 @@
                 </div>
             </div>
             <div class="container">
-                <h3 class="titles__h3">Servicios a incluir</h3>
+                <h2 class="titles__h2">Servicios a incluir</h2>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="col-sm-1" scope="col">#</th>
-                            <th class="col-sm-1" scope="col"></th>
-                            <th class="col-sm-8" scope="col">Servicio</th>
-                            <th class="col-sm-1" scope="col">Cantidad</th>
+                            <th class="col-sm-1 txt" scope="col">#</th>
+                            <th class="col-sm-1 txt" scope="col"></th>
+                            <th class="col-sm-8 txt" scope="col">Servicio</th>
+                            <th class="col-sm-1 txt" scope="col">Cantidad</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Dj + Animación</td>
+                            <td class="txt">Dj + Animación</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Sonido Ev de alta definición (hasta 300 personas)</td>
+                            <td class="txt">Sonido Ev de alta definición (hasta 300 personas)</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Cabezales móviles beam 7R</td>
+                            <td class="txt">Cabezales móviles beam 7R</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Spotled Nebula 6</td>
+                            <td class="txt">Spotled Nebula 6</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Tubos led madrix</td>
+                            <td class="txt">Tubos led madrix</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Pixelball madrix (200 esferas)</td>
+                            <td class="txt">Pixelball madrix (200 esferas)</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">7</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Lanza papeles</td>
+                            <td class="txt">Lanza papeles</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Máquina de humo</td>
+                            <td class="txt">Máquina de humo</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Cuadrilátero de truss 9x4x3 m</td>
+                            <td class="txt">Cuadrilátero de truss 9x4x3 m</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                         <tr>
                             <th scope="row">10</th>
                             <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                            <td>Bolas espejadas</td>
+                            <td class="txt">Bolas espejadas</td>
                             <td><input type="number" class="form-control" id="colFormLabel" min="0" max="6" placeholder="0"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <div class="d-grid gap-4 col-6 d-md-flex justify-content-md-center mx-auto">
+                <button class="btn btn-secondary contacto__button txt" type="submit">Enviar formulario</button>
+                <button class="btn btn-secondary contacto__button txt" type="reset">Borrar formulario</button>
+            </div>
         </form>
     </main>
     <footer>
+    <!-------------------------------------- FOOTER ---------------------------------------->
         <div class="container-fluid">
             <div class="row footer__redes">
                 <div class="col-md-4 col-xs-12 redes">

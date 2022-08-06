@@ -22,23 +22,27 @@ header{
 .titles{
     font-family: $titles;
     font-weight: bold;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.titles__h1{
+.titles__h1--index{
     @extend .titles;
     font-size: 5rem;
 }
 
-.titles__h2{
+.titles__h1{
     @extend .titles;
     font-size: 2.5rem;
 }
 
-.titles__h3{
+.titles__h2{
     @extend .titles;
     font-size: 2rem;
+}
+
+.txt{
+    font-family: $text;
+    font-size: 1.1rem;
 }
 
 @mixin flex-background{
@@ -55,6 +59,7 @@ header{
 
 .section__eventos{
     display: grid;
+    padding: 20px;
     row-gap: 15px;
     column-gap: 15px;
     grid-template-columns: 2fr 1fr;
@@ -124,7 +129,6 @@ header{
         padding-top: 20px;
     }
     &__img{
-        width: 40vw;
         padding: 20px;
     }
 }
@@ -174,6 +178,10 @@ header{
     border-radius: 40px;
 }
 
+.table{
+    padding: 50px 100px 0px 100px;
+}
+
 /* ---------------CONTACTO---------------- */
 
 .img{
@@ -181,15 +189,8 @@ header{
 }
 .contacto{
     &__img{
-        width: 30vw;
         padding: 20px;
         border-radius: 80px;
-    }
-    &__title{
-        font-family: $titles;
-        font-size: xx-large;
-        font-weight: bolder;
-        padding-top: 20px;
     }
     &__button{
         background-color: #d16ba594;

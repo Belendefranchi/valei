@@ -67,24 +67,28 @@ header {
   padding-top: 5px;
   padding-left: 40px; }
 
-.titles, .titles__h1, .titles__h2, .titles__h3 {
+.titles, .titles__h1--index, .titles__h1, .titles__h2 {
   font-family: "Pacifico";
   font-weight: bold;
-  padding-top: 20px;
   padding-bottom: 20px; }
 
-.titles__h1 {
+.titles__h1--index {
   font-size: 5rem; }
 
-.titles__h2 {
+.titles__h1 {
   font-size: 2.5rem; }
 
-.titles__h3 {
+.titles__h2 {
   font-size: 2rem; }
+
+.txt {
+  font-family: "Montserrat";
+  font-size: 1.1rem; }
 
 /* ----------------INDEX---------------- */
 .section__eventos {
   display: grid;
+  padding: 20px;
   row-gap: 15px;
   column-gap: 15px;
   grid-template-columns: 2fr 1fr;
@@ -137,7 +141,6 @@ header {
   padding-top: 20px; }
 
 .nosotros__img {
-  width: 40vw;
   padding: 20px; }
 
 /* --------------SERVICIOS---------------- */
@@ -180,6 +183,9 @@ header {
 .reserva__img {
   border-radius: 40px; }
 
+.table {
+  padding: 50px 100px 0px 100px; }
+
 /* ---------------CONTACTO---------------- */
 .img {
   display: flex;
@@ -191,15 +197,8 @@ header {
   align-content: center; }
 
 .contacto__img {
-  width: 30vw;
   padding: 20px;
   border-radius: 80px; }
-
-.contacto__title {
-  font-family: "Pacifico";
-  font-size: xx-large;
-  font-weight: bolder;
-  padding-top: 20px; }
 
 .contacto__button {
   background-color: #d16ba594;
@@ -211,6 +210,7 @@ header {
     transform: translate(2px, 2px);
     transition: all 0.2s; }
 
+/* --------MEDIA QUERY DE CELULAR-------- */
 @media (min-width: 320px) and (max-width: 575px) {
   /* -----------------INDEX------------------ */
   .section__eventos {
@@ -225,7 +225,10 @@ header {
       grid-row: 2/3; }
   /* ----------------SERVICIOS-------------- */
   .servicios__grid {
-    row-gap: 10px; } }
+    row-gap: 10px; }
+  /* -----------------RESERVA--------------- */
+  .table {
+    padding: 10px 0px 10px 0px; } }
 
 /* --------MEDIA QUERY DE TABLET-------- */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -251,4 +254,7 @@ header {
         font-size: 50px; }
     .servicios__grid .txt {
       border-radius: 12px;
-      font-size: 14px; } }
+      font-size: 14px; }
+  /* -----------------RESERVA--------------- */
+  .table {
+    padding: 10px 0px 10px 0px; } }
