@@ -15,11 +15,17 @@ $meses:(
 $imagenes:(
     img1: url("../resources/images/2.jpg"),
     img2: url("../resources/images/pixel1.jpg"),
-    img3: url("../resources/images/tubos1.jpg")
-);
+    img3: url("../resources/images/tubos1.jpg"),
+    img4: url("../resources/images/show1.jpg"),
+    img5: url("../resources/images/show2.jpg"),
+    img6: url("../resources/images/show3.jpg"),
+    img7: url("../resources/images/show4.jpg"),
+    img8: url("../resources/images/show5.jpg"),
+
+    );
 
 @each $img, $url in $imagenes{
-    .img-#{$img}{
+    .#{$img}{
         background-image: #{$url};
     }
 }
