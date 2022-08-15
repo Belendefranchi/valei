@@ -53,6 +53,69 @@
             grid-row: 6/7;
         }
     }
+    .shows__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt4{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img4{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .txt5{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .img5{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
+    .fiestas__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt6{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img6{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .txt7{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .img7{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
+    .eventos__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt8{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img8{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .txt9{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .img9{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
 
     /* -----------------RESERVA--------------- */
 
@@ -114,10 +177,84 @@
             grid-row: 3/4;
         }
     }
+    .shows__grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt4{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .img4{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .txt5{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .img5{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+    .fiestas__grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt6{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img6{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .txt7{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .img7{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+    .eventos__grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        .txt8{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img8{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .txt9{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .img9{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    }
     
     /* -----------------RESERVA--------------- */
     
     .table{
         padding: 10px 0px 10px 0px;
+    }
+}
+
+@media (min-width: 992px){
+    .RotarIzq:hover{
+        transform: scale(1.1,1.1);
+        transition: all 0.2s;
+    }
+    .RotarDer:hover{
+        transform: scale(1.1,1.1);
+        transition: all 0.2s;
     }
 }

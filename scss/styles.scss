@@ -135,13 +135,17 @@ header{
 }
 
 /* --------------SERVICIOS---------------- */
-.servicios__grid{
+@mixin grid{
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
+    border-radius: 20px;
+}
+.servicios__grid{
+    @include grid;
     .img{
         @include flex-background;
         border-radius: 20px;
@@ -185,58 +189,88 @@ header{
         grid-column: 2/4;
         grid-row: 3/4;
     }
-    .color1{
-        background-color: #d16ba594;
-    }
-    .color2{
-        background-color: #86a8e791;
-    }
-    .color3{
-        background-color: #5ffbf180;
-    }
+}
+.color1{
+    background-color: #d16ba594;
+}
+.color2{
+    background-color: #86a8e791;
+}
+.color3{
+    background-color: #5ffbf180;
+}
+.polaroid{
+    width: 80%;
+    padding: 10px 10px 50px 10px;
+    background-color: white;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0 3px 6px #666;
+}
+.RotarIzq{
+    transform:rotate(8deg); 
+}
+.RotarDer{
+    transform:rotate(-8deg);
 }
 .shows__grid{
-    margin: 16px;
-    padding: 10px;
-    background-color: #d16ba594;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid;
     grid-template-rows: 1fr 1fr;
-    .shows__img{
-        width: 80%;
-        padding: 10px 10px 50px 10px;
-        background-color: white;
-        border: 1px solid #BFBFBF;
-        box-shadow: 0 3px 6px #666;
-    }           
-    .RotarIzq{
-        transform:rotate(8deg); 
-    }
-    .RotarIzq:hover{
-        transform: scale(1.1,1.1);
-        transition: all 0.2s;
-    }
-    .RotarDer{
-        transform:rotate(-8deg);
-    }
-    .RotarDer:hover{
-        transform: scale(1.1,1.1);
-        transition: all 0.2s;
-    }
+    margin: 16px;          
     .img4{
         grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .txt4{
+        grid-column: 2/4;
         grid-row: 1/2;
     }
     .img5{
         grid-column: 3/4;
         grid-row: 2/3;
     }
-    .txt4{
+    .txt5{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+.fiestas__grid{
+    @include grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 16px;         
+    .img6{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .txt6{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .txt7{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
+.eventos__grid{
+    @include grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 16px;         
+    .img8{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img9{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .txt8{
         grid-column: 2/4;
         grid-row: 1/2;
     }
-    .txt5{
+    .txt9{
         grid-column: 1/3;
         grid-row: 2/3;
     }
