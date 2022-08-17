@@ -45,3 +45,23 @@ footer a{
         }
     }
 }
+
+
+@media (max-width: 767px){
+    .footer__redes{
+        .redes{
+            align-items: center;
+            .footer{
+                &__title--1{
+                    align-self: center;
+                }
+                &__title--3{
+                    align-self: center;
+                }
+            }
+            .redes3{
+                align-items: center;
+            }
+        }
+    }
+}  
