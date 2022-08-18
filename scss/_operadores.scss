@@ -2,8 +2,8 @@
 
 $meses:(
     mes1: #d16ba5,
-    mes2: #86A8E7,
-    mes3: #5FFBF1
+    mes2: #5FFBF1,
+    mes3: #86A8E7
 );
 
 @each $mes, $color in $meses{

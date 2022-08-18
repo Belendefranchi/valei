@@ -51,10 +51,10 @@ footer a {
   background-color: #d16ba5; }
 
 .color-mes2 {
-  background-color: #86A8E7; }
+  background-color: #5FFBF1; }
 
 .color-mes3 {
-  background-color: #5FFBF1; }
+  background-color: #86A8E7; }
 
 .img1 {
   background-image: url("../resources/images/2.jpg"); }
@@ -210,10 +210,10 @@ header {
   background-color: #d16ba594; }
 
 .color2 {
-  background-color: #86a8e791; }
+  background-color: #5ffbf180; }
 
 .color3 {
-  background-color: #5ffbf180; }
+  background-color: #86a8e791; }
 
 .polaroid {
   width: 80%;
@@ -318,7 +318,7 @@ header {
     background-color: #d16ba594; }
   .form .form3 {
     border-radius: 40px;
-    background-color: #5ffbf180; }
+    background-color: #86a8e791; }
 
 /* ---------------CONTACTO---------------- */
 .img {
