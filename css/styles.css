@@ -222,6 +222,13 @@ header {
   border: 1px solid #BFBFBF;
   box-shadow: 0 3px 6px #666; }
 
+.polaroid2 {
+  width: 20vw;
+  padding: 10px 10px 50px 10px;
+  background-color: white;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 3px 6px #666; }
+
 .RotarIzq {
   transform: rotate(8deg); }
 
@@ -303,6 +310,15 @@ header {
 
 .table {
   padding: 50px 100px 0px 100px; }
+
+.form {
+  padding: 10px; }
+  .form .form2 {
+    border-radius: 40px;
+    background-color: #d16ba594; }
+  .form .form3 {
+    border-radius: 40px;
+    background-color: #5ffbf180; }
 
 /* ---------------CONTACTO---------------- */
 .img {

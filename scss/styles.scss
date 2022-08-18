@@ -195,16 +195,23 @@ justify-content: flex-end;
     }
 }
 .color1{
-    background-color: #d16ba594;
+    background-color: $color-principal2;
 }
 .color2{
-    background-color: #86a8e791;
+    background-color: $color-intermedio2;
 }
 .color3{
-    background-color: #5ffbf180;
+    background-color: $color-secundario2;
 }
 .polaroid{
     width: 80%;
+    padding: 10px 10px 50px 10px;
+    background-color: white;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0 3px 6px #666;
+}
+.polaroid2{
+    width: 20vw;
     padding: 10px 10px 50px 10px;
     background-color: white;
     border: 1px solid #BFBFBF;
@@ -288,6 +295,18 @@ justify-content: flex-end;
 
 .table{
     padding: 50px 100px 0px 100px;
+}
+
+.form{
+    padding: 10px;
+    .form2{
+        border-radius: 40px;
+        background-color: $color-principal2
+    }
+    .form3{
+        border-radius: 40px;
+        background-color: $color-secundario2;
+    }
 }
 
 /* ---------------CONTACTO---------------- */
