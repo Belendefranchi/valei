@@ -431,6 +431,8 @@ header {
     .eventos__grid .img9 {
       grid-column: 1/2;
       grid-row: 4/5; }
+  .polaroid2 {
+    display: none; }
   /* -----------------RESERVA--------------- */
   .table {
     padding: 10px 0px 10px 0px; } }
@@ -522,6 +524,8 @@ header {
     .eventos__grid .img9 {
       grid-column: 2/3;
       grid-row: 2/3; }
+  .polaroid2 {
+    display: none; }
   /* -----------------RESERVA--------------- */
   .table {
     padding: 10px 0px 10px 0px; } }
